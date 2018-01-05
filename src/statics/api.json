@@ -1,0 +1,77 @@
+{
+  "dresses": [
+    { 
+      "pathImg": "modelo1.png", 
+      "title": "BATA BORDADA1", 
+      "price": "45", 
+      "parcelInfo": "até 5x de R$ 30,00",
+      "color": "yellow",
+      "size": "P"
+    },
+    { 
+      "pathImg": "modelo2.png", 
+      "title": "CHAPÉU DE PRAIA COM FIVELA1", 
+      "price": "101", 
+      "parcelInfo": "até 5x de R$ 30,00",
+      "color": "blue",
+      "size": "M"
+    },
+    { 
+      "pathImg": "modelo3.png", 
+      "title": "VESTIDO TEXTURIZADO1", 
+      "price": "200", 
+      "parcelInfo": "até 5x de R$ 30,00",
+      "color": "white",
+      "size": "G"
+    },
+    { 
+      "pathImg": "modelo4.png", 
+      "title": "BATA BORDADA2", 
+      "price": "400", 
+      "parcelInfo": "até 5x de R$ 30,00",
+      "color": "grey",
+      "size": "GG"
+    },
+    { 
+      "pathImg": "modelo5.png", 
+      "title": "CHAPÉU DE PRAIA COM FIVELA2", 
+      "price": "501", 
+      "parcelInfo": "até 5x de R$ 30,00",
+      "color": "orange",
+      "size": "44"
+    },
+    { 
+      "pathImg": "modelo6.png", 
+      "title": "VESTIDO TEXTURIZADO2", 
+      "price": "600", 
+      "parcelInfo": "até 5x de R$ 30,00",
+      "color": "yellow",
+      "size": "36"
+    },
+    { 
+      "pathImg": "modelo4.png", 
+      "title": "BATA BORDADA3", 
+      "price": "400", 
+      "parcelInfo": "até 5x de R$ 30,00",
+      "color": "grey",
+      "size": "GG"
+    },
+    { 
+      "pathImg": "modelo5.png", 
+      "title": "CHAPÉU DE PRAIA COM FIVELA3", 
+      "price": "501", 
+      "parcelInfo": "até 5x de R$ 30,00",
+      "color": "orange",
+      "size": "44"
+    },
+    { 
+      "pathImg": "modelo3.png", 
+      "title": "VESTIDO TEXTURIZADO3", 
+      "price": "600", 
+      "parcelInfo": "até 5x de R$ 30,00",
+      "color": "white",
+      "size": "36"
+    }
+  ]
+}
+
