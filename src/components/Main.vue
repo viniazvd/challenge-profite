@@ -10,21 +10,10 @@
     <br>
 
     <q-layout ref="layout" view="hhh lpr fff">
-
       <div slot="left" class="filters">
         <Colors :colors="colors" :allColors.sync="allColors"></Colors>
-        
         <Sizes :sizes.sync="sizes"></Sizes>
-
-        <div class="row gutter items-start">
-          <div class="col-12">
-            <h6>FAIXA DE PREÇO</h6>
-            <br>
-    
-            <q-option-group type="radio" v-model="prices" color="orange" :options="pricesList" />
-          </div>
-        </div>
-        <!-- <Prices :prices.sync="prices"></Prices> -->
+        <Prices :prices.sync="prices"></Prices>
       </div>
       
       <div class="row items-baseline">
