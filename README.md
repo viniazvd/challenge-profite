@@ -5,6 +5,9 @@
 ## Build Setup
 
 ``` bash
+# installing Quasar CLI
+$ npm install -g quasar-cli
+
 # install dependencies
 $ npm install
 
