@@ -30,11 +30,8 @@ export default {
     }
   },
   methods: {
-    sendNewOrder () {
-      let orderValue
-      event.target.textContent === 'Menor preço' ? orderValue = 'asc' : orderValue = 'desc'
-
-      this.$emit('update:orderBy', orderValue)
+    sendNewOrder (value) {
+      this.$emit('update:orderBy', value)
     }
   }
 }
