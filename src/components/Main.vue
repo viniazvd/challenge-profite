@@ -5,6 +5,7 @@
     <div class="row justify-between items-center">
       <MySection name="VESTIDOS" />
       <OrderBy :orderBy.sync="orderBy"></OrderBy>
+      ::{{ orderBy }}
     </div>
 
     <br>
@@ -36,7 +37,7 @@
 <script>
 import http from 'axios'
 
-import { isEmpty, isNull } from '../support/utils'
+// import { isEmpty, isNull } from '../support/utils'
 import { orderBy } from '../support/orderBy'
 import { isOfColors } from '../support/isOfColors'
 import { isSize } from '../support/isSize'
@@ -76,13 +77,13 @@ export default {
 
   data () {
     return {
-      orderBy: '',
+      orderBy: 'asc',
       colors: [],
       allColors: '',
       sizes: [],
       prices: '',
-      dresses: null,
-      allDresses: null,
+      dresses: [],
+      allDresses: [],
       showLoaderButton: true
     }
   },
@@ -120,18 +121,12 @@ export default {
 
   computed: {
     filteredDresses () {
-      if (!isEmpty(this.colors) && !isEmpty(this.sizes) && isNull(this.prices)) {
-        return this.dresses
-      }
-
-      if (this.allDresses) {
-        return this.allDresses
-          .filter(dress =>
-            isOfColors(this.colors, dress) &&
-            isSize(this.sizes, dress) &&
-            isPrice(this.prices, dress))
-          .sort((a, b) => orderBy(this.allDresses, this.orderBy))
-      }
+      return this.allDresses
+        .filter(dress =>
+          isOfColors(this.colors, dress) &&
+          isSize(this.sizes, dress) &&
+          isPrice(this.prices, dress))
+        .sort((a, b) => orderBy(this.allDresses, this.orderBy))
     }
   }
 }
