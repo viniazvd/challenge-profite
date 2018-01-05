@@ -33,10 +33,8 @@ export default {
     }
   },
   methods: {
-    sendNewPrice () {
-      console.log(event)
-
-      this.$emit('update:prices', '0-50')
+    sendNewPrice (value) {
+      this.$emit('update:prices', value)
     }
   }
 }
